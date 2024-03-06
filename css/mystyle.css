@@ -14,6 +14,7 @@ a{
 body{
     color: #333;
     font-size: 14px;
+    height: 2000px;
 }
 /* banner */
 .banner{
@@ -77,3 +78,245 @@ body{
     border: none;
     font-size: 16px;
 }
+.wrap{}
+/* header */
+.header{
+    height: 140px;
+    background-color: #fff;
+    /* background-color: orange; */
+    padding:   0 50px ;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    z-index: 10;
+}
+.quick{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    /* border: 1px solid red; */
+    height: 30px;
+    line-height: 30px;
+    padding-top: 5px;
+}
+.quick > a{
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+    color: #666;
+}
+.quick > a:hover{
+    color: #000;
+}
+.quick_select{
+
+}
+.quick_select > li{
+    position: relative;
+}
+.quick_select > li > a{
+    display: block;
+    padding-left: 10px;
+    height: 14px;
+    line-height: 14px;
+    color: #666;
+}
+.quick_select > li > a:hover{
+    color: #000;
+}
+.quick_select > li > a span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    /* border: 1px solid red; */
+    background-image: url("../img/down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.quick_select_sub{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    border: 1px solid #999;
+    padding: 5px;
+    width: 90px;
+    display: none;
+    background-color: #fff;
+}
+.quick_select_sub.on{
+    display: block;
+}
+.quick_select_sub li{
+    padding: 3px 0;
+    color: #666;
+}
+.quick_select_sub li:hover{
+    color: #000;
+}
+.quick_select_sub li a{}
+
+
+
+.header_fix{
+    position: relative;
+}
+.heder_icon{
+    /* border: 1px saddlebrown solid; */
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.heder_icon a{
+    margin-left: 20px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+}
+.heder_icon a img{
+    height: 25px;
+    vertical-align: middle;
+}
+.header_main{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.logo{
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav{
+    /* border: 1px solid darkblue; */
+    margin: 0 auto;
+    /* margin-top: 10px; */
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main > li{
+    margin: 0 30px;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 2%;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+.main > li:hover{
+    border-bottom: 2px solid #ccc;
+}
+.main > li > a{
+    display: block;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+.sub{
+    border: 1px solid #ccc;
+    /* border-top-color: transparent; */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: none;
+    background-color:#fff ;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    color: #555;
+    width: 120px;
+    text-align: center;
+}
+.sub li a:hover{}
+/* img_slide */
+.img_slide{
+    position: relative;
+}
+.fade{
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 1920px;
+    height: 697px;
+}
+.fade .slick-slide{
+    width: 1920px;
+    height: 697px;
+}
+.fade .slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.fade .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.fade .slick-dots li button{
+    display: block;
+    border: none;
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.fade .slick-dots li.slick-active button{
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
