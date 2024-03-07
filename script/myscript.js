@@ -45,7 +45,14 @@ $(function(){
         //     ] //responsive
     })
     
-    
+    //best seller
+    $(".seller h4").click(function(){
+        $(".seller h4").removeClass("on")
+        $(this).addClass("on")
+
+        $(".seller ul").removeClass("on")
+        $(this).next().addClass("on")
+    })
     
     
 })//jquery

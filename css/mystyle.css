@@ -16,6 +16,11 @@ body{
     font-size: 14px;
     height: 2000px;
 }
+.clear_fix::before, .clear_fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 /* banner */
 .banner{
     width: 100%;
@@ -212,7 +217,7 @@ body{
     transition: all 0.3s;
 }
 .main > li:hover{
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #bbb;
 }
 .main > li > a{
     display: block;
@@ -276,28 +281,227 @@ body{
     background-color: #333;
 }
 
+.container{
+    width: 1300px;
+    /* height: 300px; */
+    margin: 199px auto ;
+    /* background-color: cadetblue; */
 
+}
+.container > div{
+    padding-top: 120px;
+}
+.c_title{
+    font-size: 26px;
+    text-align: center;
+}
+.c_sub_title{
+    margin: 10px 0 30px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #999;
+}
+.store{}
 
+.s_product{
+    display: flex;
+    justify-content: space-between;
+}
+.s_box{
+    width: 400px;
+    /* border: 1px saddlebrown solid; */
+    position: relative;
+}
+.s_box img{}
+.s_box h3{
+    margin: 10px 0;
+}
+.s_box p{
+    color: #999;
+    font-weight: 400;
+}
+.s_box:hover p{
+    text-decoration: underline;
+}
+.s_box span{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-indent: -9999px;
+    background-image: url("../img/up.png");
+    background-size: 14px 7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(90deg);
+    
+}
+.a_product{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.a_cont{
+    width: 300px;
+    position: relative;
+}
+.a_cont:hover .wish, .a_cont:hover .add{
+    opacity: 1;
+}
+.a_cont img{
+    width: 100%;
+}
+.name{
+    color: #999;
+    margin: 10px 0;
+}
+.price{
+    font-weight: bold;
+    color: #222;
+    font-size: 15px;
+}
+.best{
+    color: #ccc;
+    background: #222;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.new{
+    color: #222;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.wish , .add{
+    position: absolute;
+    top: 175px;
+    border: 1px solid #888;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.wish{
+    left: 80px;    
+}
+.add{
+    right: 80px;    
+}
+.wish:hover , .add:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.campaign{}
+.video{
+    margin-top: 60px;
+    width: 1300px;
+    height: 686px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("https://i.vimeocdn.com/video/1231926190-9640b24205bc67f78bf6a5288e3af8533cadf62983e88667938a504bf04ff674-d?mw=1300&mh=686");
+}
+.seller {
+    position: relative;
+    width: 1300px;
+    height: 630px;
+}
+.seller h4{
+    font-size: 18px;
+    font-weight: 200;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -50px;;
+    z-index: 500;
+    color: #bbb;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+.seller h4.on{
+    color: #333;
+    border-bottom: 2px solid #bbb;
+}
+.seller ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.seller ul.on{
+    display: flex;
+}
+.seller ul li{
+    width: 240px ;
+    position: relative;
+    transition: all 0.3s;
+}
+.seller ul li a{}
+.seller ul li a img{
+    width: 100%;
+}
+.seller ul li a p{}
 
+.seller ul li:hover .wish, .seller ul li:hover .add{
+    opacity: 1;
+}
 
+.seller .wish{
+    left: 50px;
+    transition: all 0.3s;
 
+}
+.seller .add{
+    right: 50px;
+    transition: all 0.3s;
 
+}
+.seller > div{
+    position: absolute;
+    left: 0;
+    top: 250px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.necklace h4{
+    left:430px;
+}
+.earring h4{
+    left: 570px;
+}
+.ring h4{
+    left: 690px;
+}
+.bracelet h4{
+    left: 800px;
+}
+.middle_banner{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding: 130px 0;
+}
 
 
 
