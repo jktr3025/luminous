@@ -284,7 +284,7 @@ body{
 .container{
     width: 1300px;
     /* height: 300px; */
-    margin: 199px auto ;
+    margin: 199px auto 0;
     /* background-color: cadetblue; */
 
 }
@@ -417,6 +417,9 @@ body{
     background-position: center center;
     background-image: url("https://i.vimeocdn.com/video/1231926190-9640b24205bc67f78bf6a5288e3af8533cadf62983e88667938a504bf04ff674-d?mw=1300&mh=686");
 }
+video{
+    width: 100%;
+}
 .seller {
     position: relative;
     width: 1300px;
@@ -500,27 +503,156 @@ body{
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    padding: 130px 0;
+    padding: 130px 0 0 ;
+}
+.sale{
+    /* border: 1px solid royalblue; */
+}
+.s_i_product{
+    display: flex;
+    justify-content: space-between;
+}
+.s_i_box{
+    width: 400px;
+    position: relative;
+}
+.s_i_box img{
+    width: 100%;
+}
+.s_i_box .wish , .s_i_box .add{
+    position: absolute;
+    top: 250px;
+    border: 1px solid #888;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.s_i_box:hover .wish , .s_i_box:hover .add{
+    opacity: 1;
+}
+.s_i_box .wish:hover , .s_i_box .add:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.s_i_box .wish{
+    left: 125px;
+    transition: all 0.3s;
+}
+.s_i_box .add{
+    right: 125px;
+    transition: all 0.3s;
+}
+.event{
+    margin-top: 150px;
+    background-color:beige;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:120px;
+}
+.e_1{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+.e_2{
+    padding: 30px 0;
+    color: #555;
+    font-weight: 100;
+    /* border: 1px solid red; */
+}
+.event a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #333;
+    /* border: 1px solid red; */
+}
+.off_store{
+    margin: 120px 0;
+    background-color: #f7f7f7;
+    padding-top: 0 !important;
+    display: flex;
+}
+.o_s_text{
+    width: 650px;
+    padding: 100px 60px;
+}
+.o_s_text h4{
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+.t1{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #aaa;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.t2{
+    font-size: 16px;
+    margin-bottom: 60px !important;
+    line-height: 1.5;
+    color: #222;
+}
+.o_s_text a{
+    font-size: 16px;
+    border: 1px solid #222;
+    font-weight: bold;
+    padding: 30px;
+}
+.footer{
+    padding: 100px 50px 50px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.f_logo{
+    width: 200px;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: block;
+    margin-bottom: 50px;
 }
 
+.f_information{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.f_i_1{
+    border: 1px solid slateblue;
+    width: 40%;
+}
+.f_menu{
+    margin-bottom: 40px;
+}
+.f_menu a{
+    margin-right: 12px;
+}
+.f_menu a:nth-child(3){
+    color: #111;
+    font-weight: bold;
+}
+.f_basic{
+    font-weight: bold;
+}
+.f_basic span{
+    color: #111;
+    font-size: 15px;
 
+}
 
+.f_i_2{
+    border: 1px solid slateblue;
+    width: 40%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
