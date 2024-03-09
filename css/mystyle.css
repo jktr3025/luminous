@@ -15,6 +15,7 @@ body{
     color: #333;
     font-size: 14px;
     height: 2000px;
+    overflow-x: hidden;
 }
 .clear_fix::before, .clear_fix::after{
     content: "";
@@ -608,7 +609,7 @@ video{
     padding: 30px;
 }
 .footer{
-    padding: 100px 50px 50px;
+    padding: 100px 50px 20px;
     width: 100%;
     background-color: #f7f7f7;
 }
@@ -627,7 +628,7 @@ video{
     align-items: center;
 }
 .f_i_1{
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: 40%;
 }
 .f_menu{
@@ -635,6 +636,8 @@ video{
 }
 .f_menu a{
     margin-right: 12px;
+    color: #444;
+
 }
 .f_menu a:nth-child(3){
     color: #111;
@@ -643,16 +646,72 @@ video{
 .f_basic{
     font-weight: bold;
 }
-.f_basic span{
+.f_b_title{
     color: #111;
     font-size: 15px;
-
+    /* border: 1px saddlebrown solid; */
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
 }
-
+.f_i_1 .f_b_title{
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+.f_b_txt{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 2;
+    color: #444;
+    }
+.f_b_txt span{
+    font-weight: bold;
+    color: #111;
+}
 .f_i_2{
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: 40%;
-
+    display: flex;
+    justify-content: space-between;
+}
+.f_down{
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding: 50px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.copy{
+    color: #aaa;
+    font-weight: 400;
+    font-size: 12px;
+}
+.sns{
+    font-weight: bold;
+    /* border: 1px solid black; */
+}
+.sns a{
+    display: inline-block;
+    margin-left: 20px;
+}
+svg{
+    /* border: 1px solid red; */
+    height: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.sns a:hover svg{
+    opacity: 1;
+}
+.sns a img{
+    vertical-align: middle;
+    opacity: 0.5;
+}
+.sns a:nth-child(4){
+    margin-left: 25px;
 }
 
-
+.sns a:hover img{
+    opacity: 1;
+}
