@@ -353,6 +353,7 @@ body{
 .a_product{
     width: 1300px;
     display: flex;
+    justify-content: space-between;
 }
 .a_cont{
     width: 300px;
@@ -510,10 +511,12 @@ video{
 }
 .middle_banner{
     /* border: 1px solid red; */
+    height: 300px;
     display: flex;
     justify-content: center;
     padding: 130px 0 0 ;
     background-image: url("../img/middle_banner.png");
+    background-size: 1240px 300px;
 }
 .sale{
     /* border: 1px solid royalblue; */
@@ -875,7 +878,6 @@ top: 120px; */
     font-size: 12px;
 }
 .s_product{
-    display: block;
     width: 600px;
     /* border: 1px solid red; */
     padding-left: 20px;
