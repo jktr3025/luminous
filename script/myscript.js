@@ -103,7 +103,7 @@ $(function(){
             autoplaySpeed:3000,    //슬라이드 속도 (1000이 1초)
             dots:false,       //버튼 여부 기본값 false로 안 나타남
             arrows:false,    //앞 뒤 이동 화살표 여부 기본값 true로 버튼 표시됨
-            slidesToShow:2,    //한 번에 노출될 이미지 갯수
+            slidesToShow:1,    //한 번에 노출될 이미지 갯수
             slidesToScroll:1,  //앞 뒤 화살표 한 번 누를 때 이동될 이미지 갯수 (한 번에 이동될 이미지 갯수 증가하면 버튼 객수 줄어든)
             infinite:true, // 무한 반복 여부 기본값이 true로 계속 반복됨
             rows:1,     //이미지를 몇 줄로 표시할지 여부 
